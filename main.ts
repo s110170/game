@@ -18,5 +18,9 @@ basic.forever(function () {
         game.addScore(1)
         honey.delete()
         basic.pause(100)
+        honey = game.createSprite(randint(0, 4), randint(0, 4))
+    }
+    if (game.score() == 5) {
+        game.gameOver()
     }
 })
