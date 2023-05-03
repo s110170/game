@@ -1,8 +1,8 @@
 input.onGesture(Gesture.LogoUp, function () {
-    bear.change(LedSpriteProperty.Direction, 1)
+    bear.change(LedSpriteProperty.Direction, -1)
 })
 input.onGesture(Gesture.LogoDown, function () {
-    bear.change(LedSpriteProperty.Y, -1)
+    bear.change(LedSpriteProperty.Y, 1)
 })
 input.onGesture(Gesture.TiltLeft, function () {
     bear.change(LedSpriteProperty.X, -1)
