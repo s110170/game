@@ -21,6 +21,7 @@ basic.forever(function () {
         honey = game.createSprite(randint(0, 4), randint(0, 4))
     }
     if (game.score() == 5) {
+        music.playMelody("B A G F E G D B ", 120)
         game.gameOver()
     }
 })
