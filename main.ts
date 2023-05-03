@@ -1,5 +1,5 @@
 input.onGesture(Gesture.LogoUp, function () {
-    bear.change(LedSpriteProperty.X, -1)
+    bear.change(LedSpriteProperty.Y, -1)
 })
 input.onGesture(Gesture.LogoDown, function () {
     bear.change(LedSpriteProperty.Y, 1)
