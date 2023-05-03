@@ -14,5 +14,9 @@ let bear: game.LedSprite = null
 let honey = game.createSprite(randint(0, 4), randint(0, 4))
 bear = game.createSprite(3, 3)
 basic.forever(function () {
-	
+    if (bear.isTouching(honey)) {
+        game.addScore(1)
+        honey.delete()
+        basic.pause(100)
+    }
 })
